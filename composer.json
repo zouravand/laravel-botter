@@ -1,0 +1,48 @@
+{
+  "name": "tedon/laravel-botter",
+  "description": "A Bot Builder Package for laravel.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pouya Zouravand",
+      "email": "pouya.zuravand@gmail.com"
+    }
+  ],
+  "type": "library",
+  "keywords": [
+    "Laravel",
+    "Bot",
+    "LaravelBot",
+    "Botter",
+    "LaravelBotter",
+    "Tedon"
+  ],
+  "require": {
+    "php": ">=8.0"
+  },
+  "require-dev": {
+    "orchestra/canvas": "^7.4",
+    "orchestra/testbench": "^7.16"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Tedon\\LaravelBotter\\Providers\\BotterServiceProvider"
+      ],
+      "aliases": {
+        "Botter": "Tedon\\LaravelBotter\\Facades\\Menual"
+      }
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Tedon\\LaravelBotter\\": "src"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+  },
+  "minimum-stablity": "dev"
+}
